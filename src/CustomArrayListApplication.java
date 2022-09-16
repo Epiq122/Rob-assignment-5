@@ -6,7 +6,6 @@ public class CustomArrayListApplication {
         CustomArrayListApplication customArrayListApplication = new CustomArrayListApplication();
         customArrayListApplication.teamsArray();
         System.out.println("-----------------------");
-        customArrayListApplication.numbersArray();
 
 
     }
@@ -21,6 +20,7 @@ public class CustomArrayListApplication {
 
 
             teamNames.add(hockeyTeamsArray[i]);
+            teamNames.add("Ottawa Senators");
 
 
         }
@@ -32,19 +32,5 @@ public class CustomArrayListApplication {
         Stream.of(hockeyTeamsArray).forEach(System.out::println);
     }
 
-    private void numbersArray() {
-        CustomList<Integer> numbers = new CustomArrayList<>();
-        for (int i = 1; i < 99; i++) {
-            numbers.add(i);
-        }
-        for (int j = 0; j < numbers.getSize(); j++) {
-            System.out.println(numbers.get(j));
-        }
-        System.out.println(numbers.getSize());
-        System.out.println(numbers.get(99));
-//
-
-
-    }
 
 }
