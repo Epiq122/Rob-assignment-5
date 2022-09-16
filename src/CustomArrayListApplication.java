@@ -1,5 +1,3 @@
-import java.util.stream.Stream;
-
 public class CustomArrayListApplication {
 
     public static void main(String[] args) {
@@ -14,13 +12,15 @@ public class CustomArrayListApplication {
         CustomList<String> teamNames = new CustomArrayList<>();
         String[] hockeyTeamsArray = {"Edmonton Oilers", "Vancouver Canucks", "Calgary Flames", "San Jose Sharks", "Detroit RedWings", "Colorado Avalanche"
                 , "Toronto Maple Leafs", "Las Vegas Golden Knights", "LA Kings", "Dallas Stars", "Chicago BlackHawks", "Anaheim Ducks", "Florida Panthers",
-                "Montreal Canadians", "Nashville Predators", "New York Rangers", "Mew York Islanders", "Florida Panthers"};
+                "Montreal Canadians", "Nashville Predators", "New York Rangers", "New York Islanders", "Florida Panthers"};
+
+        teamNames.add("---Added --- Seattle Kraken ---Added--");
+
 
         for (int i = 0; i < hockeyTeamsArray.length; i++) {
 
 
             teamNames.add(hockeyTeamsArray[i]);
-            teamNames.add("Ottawa Senators");
 
 
         }
@@ -28,8 +28,8 @@ public class CustomArrayListApplication {
             System.out.println(teamNames.get(j));
 
         }
-        System.out.println(teamNames.getSize());
-        Stream.of(hockeyTeamsArray).forEach(System.out::println);
+        System.out.println("Total number of items " + teamNames.getSize());
+//        Stream.of(hockeyTeamsArray).forEach(System.out::println);
     }
 
 

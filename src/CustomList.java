@@ -10,7 +10,7 @@ public interface CustomList<T> {
 
     /**
      * This method should return the size of the <code>CustomList</code>
-     * based on the number of actual elements stored inside of the <code>CustomList</code>
+     * based on the number of actual elements stored inside the <code>CustomList</code>
      *
      * @return an <code>int</code> representing the number of elements stored in the <code>CustomList</code>
      */
@@ -21,7 +21,7 @@ public interface CustomList<T> {
      * index that is passed in.
      *
      * @param index represents the position in the backing <code>Object</code> array that we want to access
-     * @return The element that is stored inside of the <code>CustomList</code> at the given index
+     * @return The element that is stored inside the <code>CustomList</code> at the given index
      */
     T get(int index);
 }
