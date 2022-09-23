@@ -3,7 +3,7 @@ public class CustomArrayList<T> implements CustomList<T> {
     int listSize = 0;
 
     public Object[] biggerArraySize() {
-        Object[] newArray = new Object[listSize * 5];
+        Object[] newArray = new Object[listSize * 2];
         if (listSize >= 0) System.arraycopy(items, 0, newArray, 0, listSize);
         return newArray;
     }

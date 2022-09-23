@@ -9,10 +9,13 @@ public class CustomArrayListApplication {
     }
 
     private void teamsArray() {
+
         CustomList<String> teamNames = new CustomArrayList<>();
+
         String[] hockeyTeamsArray = {"Edmonton Oilers", "Vancouver Canucks", "Calgary Flames", "San Jose Sharks", "Detroit RedWings", "Colorado Avalanche"
                 , "Toronto Maple Leafs", "Las Vegas Golden Knights", "LA Kings", "Dallas Stars", "Chicago BlackHawks", "Anaheim Ducks", "Florida Panthers",
                 "Montreal Canadians", "Nashville Predators", "New York Rangers", "New York Islanders", "Florida Panthers"};
+
 
         teamNames.add("---Added --- Seattle Kraken ---Added--");
 
